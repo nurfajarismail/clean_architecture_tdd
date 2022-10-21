@@ -196,7 +196,7 @@ void main() {
           await repository!.getRandomNumberTrivia();
           // assert
           verify(mockRemoteDataSource!.getRandomNumberTrivia());
-           verify(mockLocalDataSource!.cacheNumberTrivia(tNumberTrivia));
+          verify(mockLocalDataSource!.cacheNumberTrivia(tNumberTriviaModel));
         },
       );
 
